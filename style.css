@@ -5,6 +5,13 @@ body {
   background-image: url('https://image.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg');
   background-size: cover;
 }
+
+#map {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+
 header {
   padding: 20px 0;
 }
@@ -54,6 +61,10 @@ a {
   margin: 0 0 20px;
   color: #fff;
 }
+section #mapheader {
+  background-color: #aa3939;
+  border-radius: 10px;
+}
 
 section .row a {
 padding: 0;
@@ -69,6 +80,7 @@ section .row img {
   margin: 0 0 30px;
 }
 
+/* buttons not active 
 .btn.btn-primary {
   border-radius: 2px;
   border: 0px;
@@ -86,19 +98,16 @@ section .row img {
   color: #ffffff;
   margin: 0 0 30px;
 }
-
+*/
 /* changed for bootstrap's img-fluid class
 .portrait {
   width:  350px;
   height: 300px;
 }
-
-
 figure img {
   width: 100%;
   height: auto;
 }
-
 figure {
   margin-bottom: 30px;
 }
