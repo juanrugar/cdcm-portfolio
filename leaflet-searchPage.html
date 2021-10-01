@@ -10,15 +10,39 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- Adding leaflet-ajax PLUGIN -->
+    <script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
+
+    <!-- Adding leaflet-search PLUGIN -->
+    <script src="https://labs.easyblog.it/maps/leaflet-search/src/leaflet-search.js"></script>
+    <link rel="stylesheet" href="https://labs.easyblog.it/maps/leaflet-search/src/leaflet-search.css" />
+
+    <!-- Adding leaflet-markercluster PLUGIN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet" >
     <link href="style.css" rel="stylesheet">
+
+   
+    <!-- JS files & scripts -->
     
-    <script src="js/basicLeaflet.js"></script>
+    <script src="js/basemapsProvs.js"></script>
+    <script src="js/fountains.js"></script>
+    <script>
+       function initMapFountains() {
+         init();
+        addFountainsData();
+       }
+    </script>
   </head>
 
-  <body onload="init()">
+  <body onload="initMapFountains()">
     <header class="container">
       <div class="row">
         <h1 class="col-sm-6">Juan Ruiz García</h1>
@@ -32,10 +56,10 @@
     </header>
     <section class="container">
       <div class="row">
-        <h4><b>Basic Leaflet Visor</b></h4>
+        <h4><b>Leaflet - Public Fountains of Valencia Search Page</b></h4>
       </div>
       <div class="row">
-        <h5><em>A simple map with markers created using Leaflet.js</em></h5>
+        <h5><em>A search page with a map of the public fountains of Valencia. Optional single/clustered item representation</em></h5>
       </div>
     </section>
     <br>
