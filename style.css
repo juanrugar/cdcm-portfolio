@@ -5,6 +5,23 @@ body {
   background-image: url('https://image.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg');
   background-size: cover;
 }
+.webGIS {
+  background-color: #535657;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.GIS {
+  background-color: #4f5ca8;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.datAnalysis {
+  background-color: #90974e;
+  border-radius: 10px;
+  padding: 20px;
+}
 
 #map {
     height: 100%;
@@ -12,12 +29,47 @@ body {
     border-radius: 10px;
   }
 
+  .panelTopIzquierda {
+    position: fixed;
+    top: 45px;
+    left: 20px;
+    width: 200px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    font-size: 20px;
+    color: #333333;
+    border-radius: 5px;
+    font-size:12px;
+}
+
+.panelTopIzquierda label {
+    font-size: 0.85em;
+}
+
+.panelTopIzquierda input[type=range] {
+    cursor: pointer;
+    width: 95%;
+}
+
+.panelTitol {
+    position: absolute;
+    top: 5px;
+    left: 45%;
+    z-index:5;
+    /*background-color: white;*/
+    padding: 20px;
+    border-radius: 4px;
+    opacity: 0.9;
+    font-size: 22px;
+}
 header {
   padding: 20px 0;
 }
+
 header .row,
 footer .row {
-  display: flex;
+ /* display: flex;  */
   align-items: center;
 }
 h1 {
@@ -35,6 +87,7 @@ p a{
   padding: 0;
 }
 a {
+  color:rgb(253, 203, 142);
   padding: 0 20px;
   margin: 0;
 }
@@ -110,12 +163,17 @@ figure {
 */
 
 footer {
+  position: fixed;
+  bottom: 0;
+  right:0;
   border: 2px solid #AA3939;
   border-radius: 20px;
   font-size: 14px;
   padding: 20px 0 20px;
+  background-color: brown;
 }
 
+/*
 footer .col-sm-8 {
   display: flex;
   justify-content: flex-end;
@@ -123,4 +181,15 @@ footer .col-sm-8 {
 
 footer ul {
   list-style: none;
+}
+*/
+.mapboxgl-popup-content,
+.mapboxgl-popup-content a {
+  color: darkred ;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 80% !important;
+  }
 }

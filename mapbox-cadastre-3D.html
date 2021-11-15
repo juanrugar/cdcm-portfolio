@@ -7,15 +7,24 @@
     <meta name="author" content="autor" />
     <meta name="description" content="descripción página">
     <meta name="robots" content="index,follow">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Mapbox CDN -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Mapbox geocoder plugin -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" type="text/css"/>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet">
     
-    <script src="js/basicLeaflet.js"></script>
+    <script src="js/mapbox-cadastre.js"></script>
+    <script src="js/cadastreBuildings.js"></script>
+    <script src="js/3d.js"></script>
+
   </head>
 
   <body onload="init()">
@@ -32,15 +41,26 @@
     </header>
     <section class="container">
       <div class="row">
-        <h4><b>Basic Leaflet Visor</b></h4>
+        <h4><b>Cadastre 3D buildings Visor</b></h4>
       </div>
       <div class="row">
-        <h5><em>A simple map with markers created using Leaflet.js</em></h5>
+        <h5><em>A visor portraying the buildings of Barcelona in 3D based upon cadastral data. 
+          Click on a building to check the cadastral profile, photo and number of floors.</em></h5>
       </div>
     </section>
     <br>
-    <section class="container-fluid">    
-      <div id="map"></div>   
+    <section class="container-fluid">
+      <div>    
+        <div class="panelTopIzquierda">
+          <label id="altura">Más de 0 pisos</label>
+          <input id="slider" onChange="filtrarEdificios(this.value)"  type="range" min="1" max="50" step="1" value="0" />
+          <hr>
+          <input id="textos" onChange="verTextos(this.checked)" type="checkbox" checked>Ver topónimos
+          <hr>
+          <input id="3d" onChange="ver3D(this.checked)" type="checkbox" checked>Ver 3D
+        </div>
+        <div id="map"></div>   
+      </div>
     </section>
     <br>
    
