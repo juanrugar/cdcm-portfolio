@@ -1,3 +1,5 @@
+
+
 body {
   font-family: Roboto, sans-serif;
   color:antiquewhite;
@@ -24,45 +26,12 @@ body {
 }
 
 #map {
-    height: 100%;
     width: 100%;
+    height: 100%;
     border-radius: 10px;
-  }
-
-  .panelTopIzquierda {
-    position: fixed;
-    top: 45px;
-    left: 20px;
-    width: 200px;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    font-size: 20px;
-    color: #333333;
-    border-radius: 5px;
-    font-size:12px;
+    
 }
 
-.panelTopIzquierda label {
-    font-size: 0.85em;
-}
-
-.panelTopIzquierda input[type=range] {
-    cursor: pointer;
-    width: 95%;
-}
-
-.panelTitol {
-    position: absolute;
-    top: 5px;
-    left: 45%;
-    z-index:5;
-    /*background-color: white;*/
-    padding: 20px;
-    border-radius: 4px;
-    opacity: 0.9;
-    font-size: 22px;
-}
 header {
   padding: 20px 0;
 }
@@ -72,6 +41,7 @@ footer .row {
  /* display: flex;  */
   align-items: center;
 }
+
 h1 {
   font-weight: 700;
   margin: 0;
@@ -83,9 +53,7 @@ nav {
 small {
   font-size: 80% !important;
 }
-p a{
-  padding: 0;
-}
+
 a {
   color:rgb(253, 203, 142);
   padding: 0 20px;
@@ -125,42 +93,11 @@ section .row img {
   border-radius: 10px;
 }
 
-.col-md-6 {
-  margin: 0 0 30px;
-}
 
-/* buttons not active 
-.btn.btn-primary {
-  border-radius: 2px;
-  border: 0px;
-  color: #fbd1d5;
-  background-color: #4b0505;
-}
 
-.btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: #fbd1d5;
+.grid-container {
+  display: grid;
 }
-
-.btn-secondary {
-  background-color: #394f72;
-  color: #ffffff;
-  margin: 0 0 30px;
-}
-*/
-/* changed for bootstrap's img-fluid class
-.portrait {
-  width:  350px;
-  height: 300px;
-}
-figure img {
-  width: 100%;
-  height: auto;
-}
-figure {
-  margin-bottom: 30px;
-}
-*/
 
 footer {
   position: fixed;
@@ -171,21 +108,8 @@ footer {
   font-size: 14px;
   padding: 5px 0 5px;
   background-color: brown;
-}
+  
 
-/*
-footer .col-sm-8 {
-  display: flex;
-  justify-content: flex-end;
-}
-
-footer ul {
-  list-style: none;
-}
-*/
-.mapboxgl-popup-content,
-.mapboxgl-popup-content a {
-  color: darkred ;
 }
 
 @media screen and (max-width: 500px) {
