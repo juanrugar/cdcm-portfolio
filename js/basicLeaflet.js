@@ -3,8 +3,10 @@ var map, capa1, controlCapas, point1, point2, point3, point4, point5; //variable
 
 function init () {      //init function
     map = L.map("map",      //map object instantation 
-    {center:[39.47, -0.376389],
-    zoom:12});
+    {
+        center:[39.47, -0.376389],
+        zoom:12
+    });
     
     capa1 = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",        //Layer object instantation
     {maxZoom: 19,
