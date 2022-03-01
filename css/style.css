@@ -67,21 +67,23 @@ a {
   background-image: url('https://content.codecademy.com/projects/personal_portfolio/background.jpeg'); 
   /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/View_from_Volcano_Pacaya%2C_Guatemala.jpg/1920px-View_from_Volcano_Pacaya%2C_Guatemala.jpg'); */
   color: #ffffff;
-  height: 200px;
+  max-height: 200px;
   border-radius: 20px;
 }
 
 .jumbotron h2 {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 700; 
   margin: 0;
   color: #fff;
 }
 
-.jumbotron h3 {
+.jumbotron h4 {
+  font-size: 20;
   margin: 0 0 20px;
   color: #fff;
 }
+
 
 section .row a {
 padding: 0;
@@ -93,7 +95,11 @@ section .row img {
   border-radius: 10px;
 }
 
-
+.row h4 {
+  
+  font-style: italic;
+  
+}
 
 .grid-container {
   display: grid;
