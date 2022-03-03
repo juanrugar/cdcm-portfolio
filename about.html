@@ -41,7 +41,6 @@
         </div>
         <div class="col-sm-9">
           <h4>Greetings!</h4><br>
-<!--  FINISH THE TEXT OF THIS SECTION 1/3/22 -->
           <p>Well, this is me: A GIS Analyst, ex-archaeologist, and IT developer.<br>
             From two years on, I devoted myself to web development projects, getting acquainted with front-end (HTML, CSS, JS, Bootstrap, Handlebars) and some back-end (Maven, Node.js, PHP, SQL) technologies, which provided me with a general view of the field and a "junior" working capacity. However, no proper job position achieved so far.
             Nevertheless, this last year I have expanded my IT skills to the GeoWeb ecosystem by enroling on a MSc in GIS Technologies. This provided me with an excellent update on my traditional GIS skills, and, more importantly, on a new array of tech and skills directly connected to web development and data analysis. 
@@ -49,6 +48,7 @@
            </p> 
          </div>
       </div>
+      <br>
       <div class="row">
         <div class="col-sm-9">
           <p>Before that I have been on the Archaeologist track for about twenty years. My interest on IT tech was already there since Archaeological research moves right behind 
@@ -60,13 +60,16 @@
           </p>
         </div>
         <div class="col-sm-3">
-          <img src="" alt="Archaeological land survey">
+          <img src="img/archaeologist.png" alt="Archaeological land survey">
         </div>
        
       </div>
+      <br>
       <div class="row">
         <div class="col-sm-3">
-          <img src="" alt="It Tech">
+          <a href="https://www.freepik.com/photos/keyboard-button" target="_blank"> <!-- link to the photo attribution --> 
+            <img src="img/closeup-black-keyboard-table.png" alt="It Tech" data-toogle="tooltip" title="Keyboard button photo created by wirestock - www.freepik.com">
+          </a>
         </div>
         <div class="col-sm-9">
         <p>
@@ -92,14 +95,16 @@
           <h4><a href="https://github.com/juanrugar" target="_blank">Github</a></h4>
           <p>Version system, Code repo, and website platform with all my projects so far</p>
          </div>
-        <div class="col-sm-3">
-          <h4><a href="https://jonirgar.medium.com/" target="_blank">Medium</a></h4>
-          <p>Articles and posts</p>
-         </div>
-        <div class="col-sm-3">
+         <div class="col-sm-3">
           <h4><a href="https://codepen.io/janruygar74/" target="_blank">Codepen</a></h4>
           <p>Training platform with some freeCodeCamp projects</p>
          </div>
+        <div class="col-sm-3">
+          <h4><a href="https://janruigar.medium.com/visor-de-patrimonio-arqueol%C3%B3gico-un-asistente-a-la-prospecci%C3%B3n-y-reconocimiento-del-terreno-a2703cbd2600"
+             target="_blank">Medium</a></h4>
+          <p>Articles and posts</p>
+         </div>
+       
       </div>
           
    </section>
@@ -115,5 +120,11 @@
         <div class="col-sm-12 text-right">&copy; 2022 Juan Ruiz</div>
       </div>
     </footer>
+     <!-- Jquery for Tooltips -->
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
   </body>
 </html>

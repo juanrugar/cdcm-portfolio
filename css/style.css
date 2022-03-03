@@ -78,8 +78,8 @@ a {
   color: #fff;
 }
 
-.jumbotron h4 {
-  font-size: 20;
+.jumbotron h3 {
+  font-size: 30px;
   margin: 0 0 20px;
   color: #fff;
 }
@@ -91,6 +91,7 @@ padding: 0;
 
 section .row img {
   margin: 0 0 30px;
+  height: auto;
   width: 100%;
   border-radius: 10px;
 }
@@ -119,5 +120,20 @@ footer {
 @media screen and (max-width: 500px) {
   body {
     font-size: 80% !important;
+  }
+
+  .jumbotron {
+    max-height: auto;
+  }
+
+  .jumbotron h2 {
+    font-size: 10vw !important;
+  } 
+  .jumbotron h3 {
+    font-size: 5vw !important;
+  }
+
+  section .row img {
+    width: 50% !important;
   }
 }
