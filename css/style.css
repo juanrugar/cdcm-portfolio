@@ -3,24 +3,31 @@
 body {
   font-family: Roboto, sans-serif;
   color:antiquewhite;
-  /*background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');*/
-  background-image: url('https://image.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg');
+  background-color: #808080;
+  /*background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+  background-image: url('https://image.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg'); */
   background-size: cover;
 }
 .webGIS {
-  background-color: #535657;
+  background-color: #800000;
   border-radius: 10px;
   padding: 20px;
 }
 
 .GIS {
-  background-color: #4f5ca8;
+  background-color: #B8860B;
   border-radius: 10px;
   padding: 20px;
 }
 
 .datAnalysis {
-  background-color: #90974e;
+  background-color: #A0522D;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.aboutLinks {
+  background-color: #696969;
   border-radius: 10px;
   padding: 20px;
 }
@@ -29,7 +36,6 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    
 }
 
 header {
@@ -64,8 +70,9 @@ a {
   display: flex;
   align-items: center;
   background-size: cover;
-  background-image: url('https://content.codecademy.com/projects/personal_portfolio/background.jpeg'); 
-  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/View_from_Volcano_Pacaya%2C_Guatemala.jpg/1920px-View_from_Volcano_Pacaya%2C_Guatemala.jpg'); */
+  background-color: #202020;
+  /*background-image: url('https://content.codecademy.com/projects/personal_portfolio/background.jpeg'); 
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/View_from_Volcano_Pacaya%2C_Guatemala.jpg/1920px-View_from_Volcano_Pacaya%2C_Guatemala.jpg'); */
   color: #ffffff;
   max-height: 200px;
   border-radius: 20px;
@@ -84,7 +91,6 @@ a {
   color: #fff;
 }
 
-
 section .row a {
 padding: 0;
 }
@@ -94,6 +100,7 @@ section .row img {
   height: auto;
   width: 100%;
   border-radius: 10px;
+  
 }
 
 .row h4 {
@@ -110,12 +117,14 @@ footer {
   position: fixed;
   bottom: 0;
   right:0;
-  border: 2px solid #AA3939;
+  border: 2px solid #808080;
   border-radius: 20px;
   font-size: 14px;
   padding: 5px 0 5px;
-  background-color: brown;
+  background-color: #404040;
 }
+
+/* MEDIA QUERIES declarations */
 
 @media screen and (max-width: 500px) {
   body {
