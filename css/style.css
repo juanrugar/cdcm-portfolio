@@ -1,34 +1,10 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: Roboto, sans-serif;
   color: antiquewhite;
-  background-color: #808080;
-  /*background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
-  background-image: url('https://image.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg'); */
-  background-size: cover;
-}
-
-.webGIS {
-  background-color: #800000;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.GIS {
-  background-color: #B8860B;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.datAnalysis {
-  background-color: #A0522D;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.aboutLinks {
-  background-color: #696969;
-  border-radius: 10px;
-  padding: 20px;
+  background-color: #828d70;
 }
 
 #map {
@@ -38,7 +14,6 @@ body {
 }
 
 header {
-
   position: fixed;
   left: 0;
   top: 0;
@@ -56,15 +31,18 @@ nav {
   margin: 0;
   padding: 20px 0;
   background-color: #202020;
-
+  
 }
-
+nav ul {
+  text-align: center;
+}
 nav li {
   display: inline;
   width: 80px;
   padding: 0 20px;
   font-size: 1.2rem;
   font-weight: 200;
+   
 }
 
 small {
@@ -86,12 +64,11 @@ main {
   align-items: center;
   background-size: cover;
   background-color: #404040;
-  /*background-image: url('https://content.codecademy.com/projects/personal_portfolio/background.jpeg'); 
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/View_from_Volcano_Pacaya%2C_Guatemala.jpg/1920px-View_from_Volcano_Pacaya%2C_Guatemala.jpg'); */
   color: #ffffff;
-  max-height: 200px;
-  border-radius: 20px;
-  border: 2px solid #808080;
+  max-height: 100px;
+  border-radius: 40px;
+  /* border: 2px solid #808080; */
+  overflow: hidden;
 }
 
 .jumbotron h2 {
@@ -101,10 +78,26 @@ main {
   color: #fff;
 }
 
-.jumbotron h3 {
+.jumbotron h5 {
   font-size: 30px;
   margin: 0 0 20px;
   color: #fff;
+}
+
+.project {
+  display:inline-block;
+  
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.project-img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 section .row a {
@@ -125,7 +118,29 @@ section .row img {
 .grid-container {
   display: grid;
 }
+.webGIS {
+  background-color: #358735;
+  border-radius: 10px;
+  padding: 20px;
+}
 
+/*.GIS {
+  background-color: #B8860B;
+  border-radius: 10px;
+  padding: 20px;
+} */
+
+.datAnalysis {
+  background-color: #264e15;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.aboutLinks {
+  background-color: #696969;
+  border-radius: 10px;
+  padding: 20px;
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -144,7 +159,7 @@ footer {
     font-size: 80% !important;
   }
   nav li {
-    display: inline-block;
+    /* display: inline-block; */
     width: 295px;
   }
   main {
@@ -153,14 +168,15 @@ footer {
   }
   .jumbotron {
     max-height: auto;
+    
   }
 
   .jumbotron h2 {
-    font-size: 10vw !important;
+    font-size: 6vw !important;
   }
 
-  .jumbotron h3 {
-    font-size: 5vw !important;
+  .jumbotron h5 {
+    font-size: 4vw !important;
   }
 
   section .row img {
