@@ -3,7 +3,7 @@
 }
 body {
   font-family: Roboto, sans-serif;
-  color: antiquewhite;
+  color: #ffffff(252, 250, 248);
   background-color: #828d70;
 }
 
@@ -41,8 +41,11 @@ nav li {
   width: 80px;
   padding: 0 20px;
   font-size: 1.2rem;
-  font-weight: 200;
-   
+  font-weight: 500;
+}
+nav li a{
+  color: #7f531e;
+  margin:0; 
 }
 
 small {
@@ -50,8 +53,11 @@ small {
 }
 
 a {
-  color: rgb(253, 203, 142);
+  color: #201b16;
   margin: 0;
+}
+a:hover{
+  color: #643cc0;
 }
 
 main {
@@ -86,10 +92,13 @@ main {
 
 .project {
   display:inline-block;
-  
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px 10px;
+}
+section .container {
+  display: inline;
+  
 }
 
 .project-img {
@@ -131,15 +140,17 @@ section .row img {
 } */
 
 .datAnalysis {
-  background-color: #264e15;
+  background-color: #76bd57;
   border-radius: 10px;
   padding: 20px;
 }
 
-.aboutLinks {
+.about-links {
   background-color: #696969;
   border-radius: 10px;
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 footer {
   position: fixed;
@@ -168,9 +179,7 @@ footer {
   }
   .jumbotron {
     max-height: auto;
-    
   }
-
   .jumbotron h2 {
     font-size: 6vw !important;
   }
@@ -179,7 +188,11 @@ footer {
     font-size: 4vw !important;
   }
 
-  section .row img {
-    width: 50% !important;
+  /* section .row img {
+    width: 75% !important;
   }
+   section .row .project-text {
+    font-size: 1rem !important;
+  } */
+  
 }
