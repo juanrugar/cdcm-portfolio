@@ -171,8 +171,15 @@ footer {
   body {
     font-size: 80% !important;
   }
+  nav ul {
+    
+      text-align: left;
+    
+  }
   nav li {
     /* display: inline-block; */
+
+    display: block;
     width: 295px;
   }
   main {
