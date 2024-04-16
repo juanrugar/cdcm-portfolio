@@ -3,8 +3,8 @@
 }
 body {
   font-family: Roboto, sans-serif;
-  color: #ffffff(252, 250, 248);
-  background-color: #828d70;
+  color: #000f1a;
+  background-color: #e6f5ff;
 }
 /*
 #map {
@@ -30,7 +30,7 @@ h1 {
 nav {
   margin: 0;
   padding: 20px 0;
-  background-color: #202020;
+  background-color: #002d4d;
   
 }
 nav ul {
@@ -44,7 +44,7 @@ nav li {
   font-weight: 500;
 }
 nav li a{
-  color: #7f531e;
+  color: #0095ff;
   margin:0; 
 }
 
@@ -53,7 +53,7 @@ small {
 }
 
 a {
-  color: #201b16;
+  color: #0095ff;
   margin: 0;
 }
 a:hover{
@@ -69,10 +69,10 @@ main {
   display: flex;
   align-items: center;
   background-size: cover;
-  background-color: #404040;
-  color: #ffffff;
+  background-color: #005999;
+  color: #fff;
   max-height: 100px;
-  border-radius: 40px;
+  border-radius: 20px;
   /* border: 2px solid #808080; */
   overflow: hidden;
 }
@@ -96,6 +96,7 @@ main {
   margin: 0 auto;
   padding: 20px 10px;
 }
+
 section .container {
   display: inline;
   
@@ -128,7 +129,13 @@ section .row img {
   display: grid;
 }
 .webGIS {
-  background-color: #358735;
+  background-color: #80caff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.datAnalysis {
+  background-color: #b3dfff;
   border-radius: 10px;
   padding: 20px;
 }
@@ -139,14 +146,8 @@ section .row img {
   padding: 20px;
 } */
 
-.datAnalysis {
-  background-color: #76bd57;
-  border-radius: 10px;
-  padding: 20px;
-}
-
 .about-links {
-  background-color: #696969;
+  background-color: #b3dfff;
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -157,11 +158,11 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
-  border: 2px solid #808080;
-  border-radius: 20px;
+  border: 2px solid #0095ff;
+  border-radius: 10px;
   font-size: 14px;
   padding: 5px 0 5px;
-  background-color: #404040;
+  background-color: #005999;
 }
 
 /* MEDIA QUERIES declarations */
