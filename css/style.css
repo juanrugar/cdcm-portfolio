@@ -15,13 +15,24 @@ body {
 */
 header {
   position: fixed;
+  display: grid;
+  grid-template-columns: auto auto;
   left: 0;
   top: 0;
   width: 100%;
   background-size: cover;
   z-index: 10;
+  padding: 10px 0;
+  background-color: #002d4d;
+  color: #0095ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+.logo{
+  height: 5em;
+  width: auto;
+  margin-left: 0.5em;
+  
+}
 h1 {
   font-weight: 700;
   margin: 0;
@@ -33,19 +44,22 @@ nav {
   background-color: #002d4d;
   
 }
+/*
 nav ul {
   text-align: center;
 }
+
 nav li {
   display: inline;
   width: 80px;
   padding: 0 20px;
   font-size: 1.2rem;
   font-weight: 500;
-}
-nav li a{
+}*/
+nav a{
   color: #0095ff;
-  margin:0; 
+  padding-right: 0.4em;
+  margin: 10px; 
 }
 
 small {
@@ -62,9 +76,9 @@ a:hover{
 
 main {
   position: relative;
-  top: 80px;
+  top: 150px;
 }
-
+/*
 .jumbotron {
   display: flex;
   align-items: center;
@@ -73,7 +87,7 @@ main {
   color: #fff;
   max-height: 100px;
   border-radius: 20px;
-  /* border: 2px solid #808080; */
+    border: 2px solid #808080; 
   overflow: hidden;
 }
 
@@ -89,7 +103,7 @@ main {
   margin: 0 0 20px;
   color: #fff;
 }
-
+*/
 .project {
   display:inline-block;
   max-width: 1000px;
